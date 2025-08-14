@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Components</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+ 
+</head>
+<body class="p-3">
+
+  <div class="container">
+
+    <h1 class="text-center mb-5">Responsive Bootstrap Progress, Placeholders & Spinners</h1>
+
+    <!-- 1. PROGRESS BARS -->
+    <section class="mb-5">
+      <h2 class="mb-4">1. Progress Bars</h2>
+      <div class="row g-3">
+
+        <!-- Each Progress in responsive columns -->
+        <div class="col-12 col-md-6">
+          <div class="progress">
+            <div class="progress-bar" style="width: 25%;">25%</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%;">Striped</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 85%;">
+              Animated
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 30%">30%</div>
+            <div class="progress-bar bg-warning" style="width: 20%">20%</div>
+            <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- 2. PLACEHOLDERS -->
+    <section class="mb-5">
+      <h2 class="mb-4">2. Placeholders (Responsive Loading Skeletons)</h2>
+      <div class="row g-4">
+
+        <!-- Card Placeholder -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder Text Blocks -->
+        <div class="col-12 col-sm-6 col-lg-8">
+          <p class="placeholder-glow mb-3">
+            <span class="placeholder col-12"></span>
+          </p>
+          <p class="placeholder-wave mb-3">
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <p class="placeholder-glow mb-3">
+            <span class="placeholder col-8"></span>
+            <span class="placeholder col-5"></span>
+            <span class="placeholder col-9"></span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- 3. SPINNERS -->
+    <section>
+      <h2 class="mb-4">3. Spinners</h2>
+
+      <!-- Responsive Spinner Layout -->
+      <div class="row text-center g-4">
+
+        <!-- Border Spinners -->
+        <div class="col-6 col-md-3">
+          <div class="spinner-border text-primary mb-2" role="status"></div>
+          <p>Primary</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="spinner-border text-success mb-2" role="status"></div>
+          <p>Success</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="spinner-border text-warning mb-2" role="status"></div>
+          <p>Warning</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="spinner-border text-danger mb-2" role="status"></div>
+          <p>Danger</p>
+        </div>
+
+        <!-- Growing Spinners -->
+        <div class="col-6 col-md-3">
+          <div class="spinner-grow text-primary mb-2" role="status"></div>
+          <p>Grow Primary</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="spinner-grow text-success mb-2" role="status"></div>
+          <p>Grow Success</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="spinner-grow text-info mb-2" role="status"></div>
+          <p>Grow Info</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="spinner-grow text-danger mb-2" role="status"></div>
+          <p>Grow Danger</p>
+        </div>
+
+      </div>
+
+      <!-- Spinners in Buttons (centered) -->
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+        <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm"></span>
+          Loading...
+        </button>
+        <button class="btn btn-success" type="button" disabled>
+          <span class="spinner-grow spinner-grow-sm"></span>
+          Processing...
+        </button>
+      </div>
+
+    </section>
+  </div>
+
+</body>
+</html>

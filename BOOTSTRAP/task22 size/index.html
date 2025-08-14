@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Sizing & Flex Utilities</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  <style>
+    .demo-box { height: 80px; }
+  </style>
+</head>
+<body class="p-4">
+
+  <h1 class="text-center mb-4">Bootstrap Sizing & Flex Utilities</h1>
+
+  <!-- 1. Sizing Utilities -->
+  <h2>1. Sizing Utilities</h2>
+
+  <!-- Width Percentages -->
+  <div class="bg-primary text-white mb-2 w-25 p-2">w-25</div>
+  <div class="bg-success text-white mb-2 w-50 p-2">w-50</div>
+  <div class="bg-warning text-dark mb-2 w-75 p-2">w-75</div>
+  <div class="bg-danger text-white mb-2 w-100 p-2">w-100</div>
+  <div class="bg-info text-dark mb-4 w-auto p-2">w-auto</div>
+
+  <!-- Height Examples (Fixed Container) -->
+  <div class="border" style="height:200px;">
+    <div class="bg-primary text-white h-25 mb-2">h-25</div>
+    <div class="bg-success text-white h-50 mb-2">h-50</div>
+    <div class="bg-warning text-dark h-75 mb-2">h-75</div>
+    <div class="bg-danger text-white h-100">h-100</div>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- 2. Flex Utilities -->
+  <h2>2. Flex Utilities</h2>
+
+  <!-- Basic Flex Row -->
+  <div class="d-flex bg-light mb-3 p-2">
+    <div class="bg-primary text-white p-2 me-2">Flex 1</div>
+    <div class="bg-success text-white p-2 me-2">Flex 2</div>
+    <div class="bg-warning text-dark p-2">Flex 3</div>
+  </div>
+
+  <!-- Justify Content -->
+  <h4>Justify Content</h4>
+  <div class="d-flex justify-content-start bg-light mb-2 p-2">
+    <div class="bg-primary text-white p-2 me-2">Start</div>
+    <div class="bg-success text-white p-2">Start</div>
+  </div>
+  <div class="d-flex justify-content-center bg-light mb-2 p-2">
+    <div class="bg-primary text-white p-2 me-2">Center</div>
+    <div class="bg-success text-white p-2">Center</div>
+  </div>
+  <div class="d-flex justify-content-end bg-light mb-2 p-2">
+    <div class="bg-primary text-white p-2 me-2">End</div>
+    <div class="bg-success text-white p-2">End</div>
+  </div>
+  <div class="d-flex justify-content-between bg-light mb-2 p-2">
+    <div class="bg-primary text-white p-2">Between</div>
+    <div class="bg-success text-white p-2">Between</div>
+  </div>
+  <div class="d-flex justify-content-around bg-light mb-4 p-2">
+    <div class="bg-primary text-white p-2">Around</div>
+    <div class="bg-success text-white p-2">Around</div>
+  </div>
+
+  <!-- Align Items -->
+  <h4>Align Items</h4>
+  <div class="d-flex align-items-start bg-light demo-box mb-2 p-2">
+    <div class="bg-danger text-white p-2 me-2">Start</div>
+    <div class="bg-info text-white p-2">Start</div>
+  </div>
+  <div class="d-flex align-items-center bg-light demo-box mb-2 p-2">
+    <div class="bg-danger text-white p-2 me-2">Center</div>
+    <div class="bg-info text-white p-2">Center</div>
+  </div>
+  <div class="d-flex align-items-end bg-light demo-box mb-2 p-2">
+    <div class="bg-danger text-white p-2 me-2">End</div>
+    <div class="bg-info text-white p-2">End</div>
+  </div>
+
+  <!-- Flex Direction -->
+  <h4>Flex Direction</h4>
+  <div class="d-flex flex-row bg-light mb-2 p-2">
+    <div class="bg-primary text-white p-2 me-2">Row 1</div>
+    <div class="bg-success text-white p-2">Row 2</div>
+  </div>
+  <div class="d-flex flex-column bg-light mb-2 p-2" style="height:150px;">
+    <div class="bg-primary text-white p-2 mb-2">Column 1</div>
+    <div class="bg-success text-white p-2">Column 2</div>
+  </div>
+
+  <!-- Flex Wrap -->
+  <h4>Flex Wrap</h4>
+  <div class="d-flex flex-wrap bg-light p-2" style="width: 300px;">
+    <div class="bg-primary text-white p-2 m-1">Item 1</div>
+    <div class="bg-success text-white p-2 m-1">Item 2</div>
+    <div class="bg-warning text-dark p-2 m-1">Item 3</div>
+    <div class="bg-danger text-white p-2 m-1">Item 4</div>
+    <div class="bg-info text-white p-2 m-1">Item 5</div>
+  </div>
+
+</body>
+</html>

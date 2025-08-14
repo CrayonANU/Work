@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Layout</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  <style>
+    .box {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .sidebar { background: #198754; }
+    .main { background: #0dcaf0; }
+    .footer { background: #212529; }
+  </style>
+</head>
+<body class="p-0">
+
+  <!-- Container -->
+  <div class="container-fluid min-vh-100 d-flex flex-column">
+
+    <!-- Header Row -->
+    <div class="row bg-primary text-white py-3 mb-3">
+      <div class="col-12 text-center fs-3">Responsive Bootstrap Layout</div>
+    </div>
+
+    <!-- Main Content Row -->
+    <div class="row flex-grow-1 gx-3">
+
+      <!-- Sidebar (hidden on small screens) -->
+      <div class="col-md-3 col-lg-2 mb-3 mb-md-0">
+        <div class="box sidebar h-100 d-flex flex-column justify-content-center">
+          Sidebar <br>(col-md-3 col-lg-2)
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9 col-lg-10">
+        <div class="box main h-100">
+          <h3>Main Content Area</h3>
+          <p>This section grows to fill the remaining space. Resize the screen to see how the grid layout adapts.</p>
+
+          <!-- Nested Grid Example -->
+          <div class="row mt-4 g-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="box">Card 1</div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="box">Card 2</div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="box">Card 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Row -->
+    <div class="row mt-3">
+      <div class="col-12 box footer text-white py-3">
+        Footer © 2025
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Float, Interaction, Shadow & Link Utilities</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  <style>
+    .demo-box { width: 120px; height: 120px; }
+  </style>
+</head>
+<body class="p-4">
+
+  <h1 class="text-center mb-4">Bootstrap Float, Interaction, Shadow & Link Utilities</h1>
+
+  <!-- 1. FLOAT UTILITIES -->
+  <h2>1. Float Utilities</h2>
+  <div class="clearfix border p-3 mb-4">
+    <div class="float-start bg-primary text-white p-2">Float Start</div>
+    <div class="float-end bg-success text-white p-2">Float End</div>
+  </div>
+
+  <div class="clearfix border p-3 mb-4">
+    <div class="float-sm-start bg-warning p-2 mb-1">float-sm-start</div>
+    <div class="float-md-end bg-info p-2 mb-1">float-md-end</div>
+  </div>
+
+  <!-- 2. INTERACTION UTILITIES -->
+  <h2>2. Interaction Utilities</h2>
+  <p class="user-select-all border p-2 mb-2">
+    Click here to select all text
+  </p>
+  <p class="user-select-none border p-2 mb-2">
+    You cannot select this text
+  </p>
+  <button class="btn btn-secondary pe-none mb-2">Pointer Disabled</button>
+  <button class="btn btn-success pe-auto mb-4">Pointer Enabled</button>
+
+  <!-- 3. SHADOW UTILITIES -->
+  <h2>3. Shadow Utilities</h2>
+  <div class="shadow-sm p-3 mb-3 bg-body rounded">Small Shadow (.shadow-sm)</div>
+  <div class="shadow p-3 mb-3 bg-body rounded">Regular Shadow (.shadow)</div>
+  <div class="shadow-lg p-3 mb-4 bg-body rounded">Large Shadow (.shadow-lg)</div>
+
+  <!-- 4. LINK UTILITIES -->
+  <h2>4. Link Utilities</h2>
+  <p>
+    <a href="#" class="link-primary">Primary Link</a> |
+    <a href="#" class="link-danger">Danger Link</a> |
+    <a href="#" class="link-success link-opacity-50">Faded Success Link</a>
+  </p>
+
+  <div class="card w-50 mb-4 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Stretched Link Card</h5>
+      <p class="card-text">Clicking anywhere in this card will open the link.</p>
+      <a href="#" class="stretched-link"></a>
+    </div>
+  </div>
+
+  <!-- 5. COMBINED EXAMPLE -->
+  <h2>5. Combined Example</h2>
+  <div class="card shadow-lg w-50 mb-5">
+    <div class="card-header bg-dark text-white">Combined Utilities Card</div>
+    <div class="card-body position-relative">
+      <p class="card-text user-select-none">
+        This card demonstrates <strong>shadow</strong>, <strong>interaction</strong>, and a <strong>stretched link</strong>. 
+        Hover over the card to see the shadow.
+      </p>
+      <a href="#" class="stretched-link link-warning"></a>
+      <div class="position-absolute top-0 end-0 bg-danger text-white p-2 float-end">
+        Float + Position
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

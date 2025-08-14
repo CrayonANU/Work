@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Alert, Badge, Dropdown & Card Variations</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body class="p-4">
+
+  <h1 class="text-center mb-5">Bootstrap Alerts, Badges, Dropdowns & Cards</h1>
+
+  <!-- 1. ALERTS -->
+  <h2>1. Alerts</h2>
+  <div class="alert alert-primary" role="alert">A simple primary alert</div>
+  <div class="alert alert-secondary" role="alert">A simple secondary alert</div>
+  <div class="alert alert-success" role="alert">A simple success alert</div>
+  <div class="alert alert-danger" role="alert">A simple danger alert</div>
+  <div class="alert alert-warning" role="alert">A simple warning alert</div>
+  <div class="alert alert-info" role="alert">A simple info alert</div>
+  <div class="alert alert-light" role="alert">A simple light alert</div>
+  <div class="alert alert-dark" role="alert">A simple dark alert</div>
+
+  <!-- Dismissible Alert -->
+  <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+    <strong>Well done!</strong> This is a dismissible success alert.
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- 2. BADGES -->
+  <h2>2. Badges</h2>
+  <p>Example heading <span class="badge bg-secondary">New</span></p>
+  <button class="btn btn-primary">
+    Notifications <span class="badge bg-light text-dark">4</span>
+  </button>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
+  <span class="badge bg-warning text-dark">Warning</span>
+  <span class="badge bg-info text-dark">Info</span>
+
+  <!-- Pill Badges -->
+  <div class="mt-3">
+    <span class="badge rounded-pill bg-primary">Primary</span>
+    <span class="badge rounded-pill bg-success">Success</span>
+    <span class="badge rounded-pill bg-danger">Danger</span>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- 3. DROPDOWNS -->
+  <h2>3. Dropdowns</h2>
+
+  <!-- Basic Dropdown -->
+  <div class="dropdown mb-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else</a></li>
+    </ul>
+  </div>
+
+  <!-- Split Dropdown -->
+  <div class="btn-group mb-3">
+    <button type="button" class="btn btn-primary">Action</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <!-- Dropup and Dropend -->
+  <div class="d-flex gap-3 mb-5">
+    <div class="dropup">
+      <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropup</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Up Item 1</a></li>
+        <li><a class="dropdown-item" href="#">Up Item 2</a></li>
+      </ul>
+    </div>
+
+    <div class="dropend">
+      <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropend</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">End Item 1</a></li>
+        <li><a class="dropdown-item" href="#">End Item 2</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- 4. CARDS -->
+  <h2>4. Cards</h2>
+
+  <!-- Basic Card -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Placeholder">
+    <div class="card-body">
+      <h5 class="card-title">Basic Card</h5>
+      <p class="card-text">Some quick example text to build on the card title.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <!-- Card with List Group -->
+  <div class="card mb-3" style="width: 18rem;">
+    <div class="card-header">Featured</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+    </ul>
+  </div>
+
+  <!-- Card with Footer & Color -->
+  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h5 class="card-title">Success card</h5>
+      <p class="card-text">This is a card with a green background and footer.</p>
+    </div>
+    <div class="card-footer text-white">Footer</div>
+  </div>
+
+  <!-- Card Group -->
+  <div class="card-group mb-3">
+    <div class="card">
+      <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="...">
+      <div class="card-body"><h5 class="card-title">Card 1</h5><p class="card-text">Some quick example text.</p></div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="...">
+      <div class="card-body"><h5 class="card-title">Card 2</h5><p class="card-text">Some quick example text.</p></div>
+    </div>
+    <div class="card">

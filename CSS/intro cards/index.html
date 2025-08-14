@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      margin: 0;
+      padding: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 30px;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .card:nth-child(1) {
+      border-top: 4px solid #ff6b6b;
+    }
+    .card:nth-child(2) {
+      border-top: 4px solid #1dd1a1;
+    }
+    .card:nth-child(3) {
+      border-top: 4px solid #54a0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center; color: #333;">Meet Our Team</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Anurag Adyalkar</h3>
+      <p>Web Developer passionate about clean code and responsive design. Loves building modern web apps.</p>
+    </div>
+
+    <div class="card">
+      <h3>Priya Sharma</h3>
+      <p>UI/UX Designer focused on creating user-centered designs that are simple, beautiful, and effective.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rahul Mehta</h3>
+      <p>Digital Marketer skilled in SEO, branding, and driving growth through data-driven campaigns.</p>
+    </div>
+  </div>
+
+</body>
+</html>

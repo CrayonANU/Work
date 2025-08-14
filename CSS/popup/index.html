@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popup Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Button styling */
+    .popup-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* Overlay background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Show the overlay when targeted */
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Popup box */
+    .popup {
+      position: relative;
+      background: white;
+      width: 300px;
+      padding: 30px;
+      margin: 100px auto;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    /* Close button */
+    .popup .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Only Popup Demo</h2>
+  <a class="popup-btn" href="#popup1">Open Popup</a>
+
+  <!-- Popup container -->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <h2>Hello!</h2>
+      <p>This is a simple popup created using only HTML and CSS.</p>
+    </div>
+  </div>
+
+</body>
+</html>

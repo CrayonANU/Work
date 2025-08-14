@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Position & Display Utilities</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  <style>
+    /* For visualization */
+    .demo-box { width: 120px; height: 120px; }
+  </style>
+</head>
+<body class="p-4">
+
+  <h1 class="text-center mb-4">Bootstrap Position & Display Utilities</h1>
+
+  <!-- 1. Display Utilities -->
+  <h2>1. Display Utilities</h2>
+
+  <div class="mb-3">
+    <span class="d-block bg-primary text-white p-2">d-block (Full width)</span>
+  </div>
+  
+  <div class="mb-3">
+    <span class="d-inline bg-success text-white p-2">d-inline</span>
+    <span class="d-inline bg-danger text-white p-2">d-inline</span>
+  </div>
+  
+  <div class="mb-3">
+    <span class="d-inline-block bg-warning p-2">d-inline-block</span>
+    <span class="d-inline-block bg-info p-2">d-inline-block</span>
+  </div>
+  
+  <div class="mb-3 d-flex bg-light p-2">
+    <div class="bg-primary text-white p-2 me-2">Flex 1</div>
+    <div class="bg-success text-white p-2">Flex 2</div>
+  </div>
+  
+  <div class="mb-3">
+    <span class="d-none">This is hidden using d-none</span>
+    <span class="bg-dark text-white p-2">Visible Item</span>
+  </div>
+
+  <hr>
+
+  <!-- 2. Position Utilities -->
+  <h2>2. Position Utilities</h2>
+
+  <!-- Position Static (Default) -->
+  <div class="position-static bg-secondary text-white demo-box mb-3 d-flex align-items-center justify-content-center">
+    position-static
+  </div>
+
+  <!-- Relative Position -->
+  <div class="position-relative bg-info text-white demo-box mb-3 d-flex align-items-center justify-content-center">
+    <span class="position-absolute top-0 start-0 bg-dark text-white p-1">Top-Left</span>
+    position-relative
+  </div>
+
+  <!-- Fixed Position -->
+  <div class="position-fixed bottom-0 end-0 bg-danger text-white p-2">
+    position-fixed (Bottom Right)
+  </div>
+
+  <!-- Sticky Position -->
+  <div class="position-sticky top-0 bg-warning text-dark p-2 mb-3">
+    position-sticky (Scroll to see effect)
+  </div>
+
+  <p class="mt-5">
+    Scroll down to see how sticky & fixed elements behave...
+    <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta felis eu erat pharetra, a venenatis ipsum cursus. 
+    Duis congue commodo risus, et placerat sapien tincidunt et. Curabitur commodo, magna ac feugiat venenatis, ligula nisi ultricies libero, 
+    ac iaculis purus lectus vitae libero. Vestibulum non mi et magna consequat feugiat eget quis elit.
+    <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta felis eu erat pharetra, a venenatis ipsum cursus. 
+    Duis congue commodo risus, et placerat sapien tincidunt et. Curabitur commodo, magna ac feugiat venenatis, ligula nisi ultricies libero, 
+    ac iaculis purus lectus vitae libero. Vestibulum non mi et magna consequat feugiat eget quis elit.
+  </p>
+
+</body>
+</html>

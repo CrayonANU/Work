@@ -1,0 +1,50 @@
+<style>
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .responsive-table th, .responsive-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  @media (max-width: 600px) {
+    .responsive-table thead {
+      display: none;
+    }
+    .responsive-table td {
+      display: block;
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+    }
+    .responsive-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+</style>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Role</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Employee">Tom</td>
+      <td data-label="Role">Developer</td>
+      <td data-label="Department">IT</td>
+    </tr>
+    <tr>
+      <td data-label="Employee">Sara</td>
+      <td data-label="Role">Designer</td>
+      <td data-label="Department">Marketing</td>
+    </tr>
+  </tbody>
+</table>

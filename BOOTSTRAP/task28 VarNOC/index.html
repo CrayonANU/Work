@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar, Offcanvas & Collapse Variations</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  
+</head>
+<body class="p-3">
+
+  <h1 class="text-center mb-4">Navbar, Offcanvas & Collapse Variations</h1>
+
+  <!-- 1. NAVBAR VARIATIONS -->
+  <h2>1. Navbar Variations</h2>
+
+  <!-- Dark Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dark Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#darkNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="darkNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-light">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Light Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Light Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lightNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="lightNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fixed Top Navbar -->
+  <nav class="navbar navbar-dark bg-primary fixed-top mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed Top</a>
+    </div>
+  </nav>
+  <div style="height:60px"></div> <!-- Spacer for fixed navbar -->
+
+  <!-- Sticky Top Navbar -->
+  <nav class="navbar navbar-dark bg-success sticky-top mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sticky Top Navbar</a>
+    </div>
+  </nav>
+
+  <hr class="my-5">
+
+  <!-- 2. OFFCANVAS VARIATIONS -->
+  <h2>2. Offcanvas Variations</h2>
+
+  <!-- Buttons -->
+  <div class="d-flex gap-2 mb-3">
+    <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart">Left</button>
+    <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd">Right</button>
+    <button class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">Top</button>
+    <button class="btn btn-danger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Bottom</button>
+  </div>
+
+  <!-- Left Offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart">
+    <div class="offcanvas-header">
+      <h5>Offcanvas Left</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">Content from left</div>
+  </div>
+
+  <!-- Right Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd">
+    <div class="offcanvas-header">
+      <h5>Offcanvas Right</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">Content from right</div>
+  </div>
+
+  <!-- Top Offcanvas -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+    <div class="offcanvas-header">
+      <h5>Offcanvas Top</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">Content from top</div>
+  </div>
+
+  <!-- Bottom Offcanvas -->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom">
+    <div class="offcanvas-header">
+      <h5>Offcanvas Bottom</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">Content from bottom</div>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- 3. COLLAPSE VARIATIONS -->
+  <h2>3. Collapse Variations</h2>
+
+  <!-- Simple Collapse -->
+  <button class="btn btn-primary mb-2" data-bs-toggle="collapse" data-bs-target="#simpleCollapse">
+    Toggle Simple Collapse
+  </button>
+  <div class="collapse" id="simpleCollapse">
+    <div class="card card-body">This is a simple collapsible content.</div>
+  </div>
+
+  <!-- Multi Collapse -->
+  <div class="mt-4">
+    <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Toggle Multi Collapse</button>
+    <div class="row mt-2">
+      <div class="col">
+        <div class="collapse multi-collapse">
+          <div class="card card-body">First collapse</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse">
+          <div class="card card-body">Second collapse</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion Collapse -->
+  <div class="accordion mt-5" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">Content for item 1.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">Content for item 2.</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

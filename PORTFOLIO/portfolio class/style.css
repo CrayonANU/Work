@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.portfolio-header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 0;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+}
+
+.portfolio-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.portfolio-section {
+  padding: 60px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Animations */
+.portfolio-header .portfolio-title,
+.portfolio-header .portfolio-subtitle {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.portfolio-header .portfolio-title {
+  animation-delay: 0.5s;
+}
+
+.portfolio-header .portfolio-subtitle {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+img.img-fluid {
+  max-width: 200px;
+  height: auto;
+}
+
+.accordion-button {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: white;
+}

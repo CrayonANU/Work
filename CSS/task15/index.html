@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aspect Ratio Examples</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .card, .video, .image-container {
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Square card with 1:1 aspect ratio */
+    .square {
+      aspect-ratio: 1 / 1;
+      width: 200px;
+      background: coral;
+      color: white;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 16:9 video placeholder */
+    .video-placeholder {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    /* Image with 3:2 aspect ratio */
+    .image {
+      aspect-ratio: 3 / 2;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Square Card (1:1)</h2>
+    <div class="square">1:1</div>
+  </div>
+
+  <div class="video">
+    <h2>Widescreen Video (16:9)</h2>
+    <div class="https://www.youtube.com/watch?v=suBu_34d84w">Video Placeholder</div>
+  </div>
+
+  <div class="image-container">
+    <h2>Image with 3:2 Ratio</h2>
+    <img class="image" src="https://picsum.photos/id/1025/600/400" alt="Example">
+  </div>
+
+</body>
+</html>

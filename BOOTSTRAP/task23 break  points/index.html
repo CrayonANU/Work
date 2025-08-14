@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid & Breakpoints Practice</title>
+  <link href="../bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  <style>
+    .grid-box {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+<body class="p-4">
+
+  <h1 class="text-center mb-4">Bootstrap Grid & Breakpoints Practice</h1>
+
+  <!-- 1. Basic Grid -->
+  <h2>1. Basic Grid (12 Columns)</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col grid-box">1</div>
+      <div class="col grid-box">2</div>
+      <div class="col grid-box">3</div>
+      <div class="col grid-box">4</div>
+      <div class="col grid-box">5</div>
+      <div class="col grid-box">6</div>
+      <div class="col grid-box">7</div>
+      <div class="col grid-box">8</div>
+      <div class="col grid-box">9</div>
+      <div class="col grid-box">10</div>
+      <div class="col grid-box">11</div>
+      <div class="col grid-box">12</div>
+    </div>
+  </div>
+
+  <!-- 2. Column Sizing -->
+  <h2>2. Column Sizing</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-4 grid-box">col-4</div>
+      <div class="col-8 grid-box">col-8</div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-3 grid-box">col-3</div>
+      <div class="col-6 grid-box">col-6</div>
+      <div class="col-3 grid-box">col-3</div>
+    </div>
+  </div>
+
+  <!-- 3. Responsive Breakpoints -->
+  <h2>3. Responsive Breakpoints</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-sm-6 col-lg-3 grid-box">col-sm-6 col-lg-3</div>
+      <div class="col-sm-6 col-lg-3 grid-box">col-sm-6 col-lg-3</div>
+      <div class="col-sm-6 col-lg-3 grid-box">col-sm-6 col-lg-3</div>
+      <div class="col-sm-6 col-lg-3 grid-box">col-sm-6 col-lg-3</div>
+    </div>
+  </div>
+
+  <!-- 4. Auto Layout Columns -->
+  <h2>4. Auto Layout Columns</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col grid-box">Auto</div>
+      <div class="col grid-box">Auto</div>
+    </div>
+    <div class="row mt-3">
+      <div class="col grid-box">Auto</div>
+      <div class="col grid-box">Auto</div>
+      <div class="col grid-box">Auto</div>
+    </div>
+  </div>
+
+  <!-- 5. Offset Columns -->
+  <h2>5. Offset Columns</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-4 grid-box">col-4</div>
+      <div class="col-4 offset-4 grid-box">col-4 offset-4</div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-3 offset-3 grid-box">col-3 offset-3</div>
+      <div class="col-3 offset-3 grid-box">col-3 offset-3</div>
+    </div>
+  </div>
+
+  <!-- 6. Ordering Columns -->
+  <h2>6. Ordering Columns</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col order-3 grid-box">First Visually (order-3)</div>
+      <div class="col order-1 grid-box">Second Visually (order-1)</div>
+      <div class="col order-2 grid-box">Third Visually (order-2)</div>
+    </div>
+  </div>
+
+  <!-- 7. Nested Grids -->
+  <h2>7. Nested Grids</h2>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-6 grid-box">
+        Parent col-6
+        <div class="row mt-2">
+          <div class="col-6 grid-box bg-success">Nested col-6</div>
+          <div class="col-6 grid-box bg-warning">Nested col-6</div>
+        </div>
+      </div>
+      <div class="col-6 grid-box">Parent col-6</div>
+    </div>
+  </div>
+
+  <!-- 8. Different Containers -->
+  <h2>8. Containers</h2>
+  <div class="container bg-light p-3 mb-3">.container (fixed-width responsive)</div>
+  <div class="container-fluid bg-light p-3 mb-3">.container-fluid (full width)</div>
+  <div class="container-lg bg-light p-3 mb-3">.container-lg (fluid until lg breakpoint)</div>
+
+</body>
+</html>
