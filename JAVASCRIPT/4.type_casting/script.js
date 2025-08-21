@@ -1,7 +1,7 @@
 // explicit type casting
 // convert to string
-let num = 123;
-let str = String(num); // "123"
+letnum = 123;
+letstr = String(num); // "123"
 console.log(typeof str); // "string"
 // convert to number
 let str = "456";
